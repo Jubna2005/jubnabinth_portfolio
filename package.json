@@ -1,7 +1,8 @@
-{
-  "name": "portfolioo",
+ {
+  "name": "portfolioo_backup1",
   "private": true,
   "version": "0.0.0",
+  "homepage": "https://jubna2005.github.io/jubnabinth_portfolio",
   "type": "module",
   "scripts": {
     "dev": "vite",
