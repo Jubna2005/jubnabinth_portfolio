@@ -1,0 +1,177 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+* {
+  font-family: 'Poppins', sans-serif;
+}
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+
+body{
+  background:#050505;
+  color:white;
+  font-family:Poppins,sans-serif;
+  overflow-x:hidden;
+}
+
+.page{
+  min-height:100vh;
+  padding:120px 10%;
+}
+
+body {
+  background: linear-gradient(
+    -45deg,
+    #050505,
+    #0a0a0a,
+    #141414,
+    #0d0d0d
+  );
+
+  background-size: 400% 400%;
+
+  animation: gradientMove 15s ease infinite;
+
+  color: white;
+}
+
+@keyframes gradientMove {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+body {
+  background: #050505;
+  color: white;
+  overflow-x: hidden;
+}
+
+body::before {
+  content: "";
+
+  position: fixed;
+
+  width: 700px;
+  height: 700px;
+
+  background: radial-gradient(
+    circle,
+    rgba(139,92,246,0.25),
+    transparent 70%
+  );
+
+  top: -200px;
+  right: -200px;
+
+  z-index: -1;
+
+  animation: moveGlow 8s ease-in-out infinite alternate;
+}
+
+body::after {
+  content: "";
+
+  position: fixed;
+
+  width: 600px;
+  height: 600px;
+
+  background: radial-gradient(
+    circle,
+    rgba(99,102,241,0.18),
+    transparent 70%
+  );
+
+  bottom: -200px;
+  left: -200px;
+
+  z-index: -1;
+
+  animation: moveGlow2 10s ease-in-out infinite alternate;
+}
+
+@keyframes moveGlow {
+  from {
+    transform: translate(0,0);
+  }
+
+  to {
+    transform: translate(-100px,100px);
+  }
+}
+
+@keyframes moveGlow2 {
+  from {
+    transform: translate(0,0);
+  }
+
+  to {
+    transform: translate(100px,-100px);
+  }
+}
+
+body {
+  background:
+    radial-gradient(
+      circle at top right,
+      rgba(139,92,246,0.18),
+      transparent 35%
+    ),
+
+    radial-gradient(
+      circle at bottom left,
+      rgba(59,130,246,0.12),
+      transparent 35%
+    ),
+
+    #050505;
+
+  color: white;
+}
+
+.footer{
+  text-align:center;
+
+  padding:30px;
+
+  color:#888;
+
+  border-top:
+  1px solid rgba(255,255,255,.08);
+}
+
+.exp-item {
+  margin-bottom: 20px;
+}
+
+.exp-item h3 {
+  margin: 0;
+  font-size: 18px;
+}
+
+.exp-item p {
+  margin: 5px 0;
+  font-size: 14px;
+}
+
+.exp-item span {
+  font-size: 13px;
+  color: gray;
+}
+
+.exp-desc {
+  font-size: 13px;
+  color: #aaa;
+}

@@ -1,0 +1,402 @@
+
+.projects-page {
+  min-height: 100vh;
+  padding: 120px 10%;
+  background: #050505;
+}
+
+.projects-title {
+  text-align: center;
+  font-size: 3rem;
+  margin-bottom: 60px;
+}
+
+.projects-container {
+  display: grid;
+
+  grid-template-columns:
+    repeat(auto-fit, minmax(300px, 1fr));
+
+  gap: 30px;
+}
+
+.project-card {
+
+  background:
+    rgba(255,255,255,0.05);
+
+  backdrop-filter:
+    blur(20px);
+
+  border:
+    1px solid rgba(255,255,255,0.1);
+
+  border-radius: 20px;
+
+  padding: 30px;
+
+  transition: 0.4s;
+
+  position: relative;
+
+  overflow: hidden;
+}
+
+.project-card::before {
+
+  content: "";
+
+  position: absolute;
+
+  width: 300px;
+  height: 300px;
+
+  background:
+    radial-gradient(
+      circle,
+      rgba(139,92,246,0.3),
+      transparent
+    );
+
+  top: -150px;
+  left: -150px;
+
+  transition: 0.5s;
+}
+
+.project-card:hover {
+
+  transform:
+    translateY(-10px);
+
+  border:
+    1px solid #8b5cf6;
+
+  box-shadow:
+    0 0 30px rgba(139,92,246,0.4);
+}
+
+.project-card h2 {
+  color: white;
+  margin-bottom: 15px;
+}
+
+.project-card p {
+  color: #bdbdbd;
+  line-height: 1.7;
+}
+
+.about-card {
+  background: rgba(255,255,255,0.05);
+
+  border: 1px solid rgba(255,255,255,0.08);
+
+  border-radius: 20px;
+
+  padding: 25px;
+
+  margin-top: 25px;
+}
+
+.skills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.skill {
+  padding: 10px 20px;
+
+  border-radius: 50px;
+
+  background: rgba(139,92,246,.15);
+
+  border: 1px solid #8b5cf6;
+
+  color: white;
+}
+
+.contact-grid {
+  display: grid;
+
+  grid-template-columns:
+    repeat(auto-fit, minmax(300px,1fr));
+
+  gap: 25px;
+
+  margin-top: 40px;
+}
+
+.contact-card {
+  background: rgba(255,255,255,0.05);
+
+  border: 1px solid rgba(255,255,255,0.08);
+
+  border-radius: 20px;
+
+  padding: 30px;
+
+  transition: .3s;
+}
+
+.contact-card:hover {
+
+  transform: translateY(-8px);
+
+  border-color: #8b5cf6;
+
+  box-shadow:
+    0 0 20px rgba(139,92,246,.3);
+}
+
+.project-card {
+  transition: transform 0.3s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+}
+
+.project-img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+.video-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.video-content video {
+  width: 600px;
+  border-radius: 10px;
+}
+
+.contact-card {
+  background: rgba(255, 255, 255, 0.03);
+  border-radius: 15px;
+  padding: 25px;
+  transition: 0.3s;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.contact-card:hover {
+  transform: translateY(-6px);
+  border: 1px solid #a855f7;
+  box-shadow: 0 0 20px rgba(168, 85, 247, 0.25);
+}
+
+.icon {
+  font-size: 26px;
+  color: #a855f7;
+  margin-bottom: 10px;
+}
+
+.contact-title {
+  font-size: 36px;
+  margin-bottom: 40px;
+}
+
+.contact-title span {
+  color: #a855f7;
+}
+
+.contact-sub {
+  color: #aaa;
+  font-size: 15px;
+  margin-bottom: 30px;
+  max-width: 500px;
+}
+
+.contact-footer-text {
+  text-align: center;
+  margin-top: 50px;
+  color: #aaa;
+  font-size: 15px;
+  max-width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 1.6;
+}
+
+
+.more-btn {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background: #8b5cf6;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+/* DETAILS LAYOUT */
+.details-section {
+  margin-top: 80px;
+  display: flex;
+  gap: 50px;
+}
+
+/* LEFT SIDE */
+.tabs {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.tabs button {
+  padding: 18px 28px;   /* bigger */
+  font-size: 16px;      /* larger text */
+  border: none;
+  background: #f3f3f3;
+  cursor: pointer;
+  border-radius: 8px;
+  text-align: left;
+  transition: 0.3s;
+}
+
+/* HOVER EFFECT 🔥 */
+.tabs button:hover {
+  background: #8b5cf6;
+  color: white;
+}
+
+/* RIGHT SIDE */
+.tab-content {
+  flex: 1;
+  background: linear-gradient(135deg, #0f0f0f, #1a1a2e);
+  padding: 25px;
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.6);
+  color: white;
+}
+
+.tab-content h3 {
+  color: white;
+  font-size: 28px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.tab-content:hover {
+  transform: translateY(-3px);
+  transition: 0.3s;
+}
+
+.exp-block {
+  margin-bottom: 25px;   /* 🔥 THIS CREATES GAP */
+}
+
+.info-row {
+  display: flex;
+  gap: 40px;              /* controls space between label & value */
+  margin-bottom: 12px;
+  font-size: 16px;
+}
+
+/* LABEL */
+.info-row span:first-child {
+  color: #aaa;
+  min-width: 120px;       /* keeps alignment */
+}
+
+/* VALUE */
+.info-row span:last-child {
+  color: white;
+  font-weight: 500;
+}
+
+.about-points li {
+  font-size: 18px;      /* 🔥 increase size */
+  line-height: 1.7;     /* better readability */
+}
+
+.about-points li {
+  margin-bottom: 14px;  /* space between points */
+}
+
+.about-points {
+  padding-left: 25px;   /* move points slightly right */
+}
+
+.about-btn-container {
+  text-align: center;
+  margin-top: 30px;
+}
+
+.projects-btn {
+  background: #a855f7;
+  color: white;
+  border: none;
+  padding: 12px 25px;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.projects-btn:hover {
+  background: #9333ea;
+  transform: scale(1.05);
+}
+
+.back-home {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.back-btn {
+  display: inline-block;
+  padding: 12px 25px;
+  border: 1px solid #8b5cf6;
+  color: #f9f9f9;
+  text-decoration: none;
+  border-radius: 8px;
+  transition: 0.3s;
+}
+
+.back-btn:hover {
+  background: #8b5cf6;
+  color: white;
+}
+
+.contact-redirect {
+  margin-top: 20px;
+  font-size: 14px;
+  color: #aaa;
+  
+}
+
+.contact-redirect a {
+  color: #8b5cf6;   /* same as your buttons */
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.contact-redirect a:hover {
+  text-decoration: underline;
+  opacity: 0.8;
+}
+
+.contact-link {
+  color: #8b5cf6;   /* SAME as LinkedIn */
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.contact-link:hover {
+  text-decoration: underline;
+  opacity: 0.8;
+}
